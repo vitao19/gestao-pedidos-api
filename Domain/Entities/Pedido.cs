@@ -1,3 +1,5 @@
+using GestaoPedidos.Api.Domain.Enums;
+
 namespace GestaoPedidos.Api.Domain.Entities;
 
 public class Pedido

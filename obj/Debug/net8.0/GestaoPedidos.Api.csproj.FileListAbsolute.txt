@@ -33,3 +33,4 @@ C:\dev\gestao-pedidos-api\obj\Debug\net8.0\refint\GestaoPedidos.Api.dll
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.pdb
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.genruntimeconfig.cache
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\ref\GestaoPedidos.Api.dll
+C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.sourcelink.json
