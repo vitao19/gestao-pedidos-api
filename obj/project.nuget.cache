@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3EKEREeo9hg=",
+  "dgSpecHash": "r/hMOBWe4oY=",
   "success": true,
   "projectFilePath": "C:\\dev\\gestao-pedidos-api\\GestaoPedidos.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\Thinkpad\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.11\\microsoft.entityframeworkcore.8.0.11.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.11\\microsoft.entityframeworkcore.abstractions.8.0.11.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.11\\microsoft.entityframeworkcore.analyzers.8.0.11.nupkg.sha512",

@@ -5,22 +5,29 @@ namespace GestaoPedidos.Api.Infrastructure.Data;
 
 public class AppDbContext : DbContext
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options)
-        : base(options)
-    {
-    }
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    public DbSet<Pedido> Pedidos => Set<Pedido>();
-
-    public DbSet<ItemPedido> ItensPedido => Set<ItemPedido>();
+    public DbSet<Pedido> Pedidos { get; set; }
+    public DbSet<ItemPedido> ItensPedido { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Pedido>()
-            .HasMany(p => p.Itens)
-            .WithOne(i => i.Pedido)
-            .HasForeignKey(i => i.PedidoId);
+        modelBuilder.Entity<Pedido>(builder =>
+        {
+            builder.HasKey(p => p.Id);
+            builder.Property(p => p.ClienteNome).IsRequired().HasMaxLength(100);
+            builder.Property(p => p.Status).HasConversion<int>();
 
-        base.OnModelCreating(modelBuilder);
+            builder.HasMany(p => p.Itens)
+                   .WithOne()
+                   .HasForeignKey(i => i.PedidoId)
+                   .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<ItemPedido>(builder =>
+        {
+            builder.HasKey(i => i.Id);
+            builder.Property(i => i.ProdutoNome).IsRequired().HasMaxLength(150);
+        });
     }
 }

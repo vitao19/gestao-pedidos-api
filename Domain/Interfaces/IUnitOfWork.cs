@@ -1,7 +1,6 @@
-﻿namespace GestaoPedidos.Api.Domain.Interfaces
+﻿namespace GestaoPedidos.Api.Domain.Interfaces;
+
+public interface IUnitOfWork : IDisposable
 {
-    public interface IUnitOfWork : IDisposable
-    {
-        Task<bool> CommitAsync();
-    }
+    Task<bool> CommitAsync();
 }

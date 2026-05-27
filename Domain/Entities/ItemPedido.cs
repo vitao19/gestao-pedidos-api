@@ -2,15 +2,21 @@ namespace GestaoPedidos.Api.Domain.Entities;
 
 public class ItemPedido
 {
-    public int Id { get; set; }
+    public int Id { get; private set; }
+    public Guid PedidoId { get; private set; }
+    public string ProdutoNome { get; private set; }
+    public int Quantidade { get; private set; }
+    public decimal PrecoUnitario { get; private set; }
 
-    public Guid PedidoId { get; set; }
+    protected ItemPedido() { }
 
-    public string ProdutoNome { get; set; } = string.Empty;
+    public ItemPedido(string produtoNome, int quantidade, decimal precoUnitario)
+    {
+        if (quantidade <= 0)
+            throw new ArgumentException("A quantidade deve ser maior que zero.");
 
-    public int Quantidade { get; set; }
-
-    public decimal PrecoUnitario { get; set; }
-
-    public Pedido Pedido { get; set; } = null!;
+        ProdutoNome = produtoNome;
+        Quantidade = quantidade;
+        PrecoUnitario = precoUnitario;
+    }
 }

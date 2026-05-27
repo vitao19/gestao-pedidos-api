@@ -1,4 +1,26 @@
+using FluentValidation;
+using GestaoPedidos.Api.Application.Validators;
+using GestaoPedidos.Api.Domain.Interfaces;
+using GestaoPedidos.Api.Infrastructure.Data;
+using GestaoPedidos.Api.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Banco de Dados em Memória
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseInMemoryDatabase("GestaoPedidosDb"));
+
+// Repositórios e Unit of Work 
+builder.Services.AddScoped<IPedidoRepository, PedidoRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+// Serviços 
+builder.Services.AddScoped<IPedidoService, PedidoService>();
+
+// FluentValidation 
+builder.Services.AddValidatorsFromAssemblyContaining<CriarPedidoDtoValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<CriarItemPedidoDtoValidator>();
 
 // Add services to the container.
 
