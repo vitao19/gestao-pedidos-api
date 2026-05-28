@@ -34,3 +34,16 @@ C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.pdb
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.genruntimeconfig.cache
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\ref\GestaoPedidos.Api.dll
 C:\dev\gestao-pedidos-api\obj\Debug\net8.0\GestaoPedidos.Api.sourcelink.json
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\FluentValidation.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\dev\gestao-pedidos-api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\dev\gestao-pedidos-api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

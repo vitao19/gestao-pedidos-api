@@ -10,7 +10,8 @@ public class CriarItemPedidoDtoValidator
     {
         RuleFor(x => x.ProdutoNome)
             .NotEmpty()
-            .WithMessage("O nome do produto é obrigatório.");
+            .WithMessage("O nome do produto é obrigatório.")
+            .MaximumLength(150).WithMessage("O nome do produto deve ter no máximo 150 caracteres."); 
 
         RuleFor(x => x.Quantidade)
             .GreaterThan(0)

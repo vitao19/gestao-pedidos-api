@@ -50,8 +50,24 @@ public class PedidoService : IPedidoService
             int page,
             int pageSize)
     {
+        page = page <= 0 ? 1 : page;
+
+        pageSize = pageSize <= 0 ? 10 : pageSize;
+
         return await _repository
             .ObterPorStatusAsync(status, page, pageSize);
+    }
+
+    public async Task PagarAsync(Guid id)
+    {
+        var pedido = await _repository.ObterEntidadePorIdAsync(id);
+
+        if (pedido is null)
+            throw new KeyNotFoundException("Pedido não encontrado.");
+
+        pedido.MarcarComoPago();
+
+        await _repository.SalvarAlteracoesAsync();
     }
 
     public async Task CancelarAsync(Guid id)
