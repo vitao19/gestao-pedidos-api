@@ -8,10 +8,6 @@ public class CriarPedidoDtoValidator : AbstractValidator<CriarPedidoDto>
     public CriarPedidoDtoValidator()
     {
         RuleFor(x => x.ClienteNome)
-            .NotEmpty()
-            .WithMessage("O nome do cliente é obrigatório.");
-
-        RuleFor(x => x.ClienteNome)
             .NotEmpty().WithMessage("O nome do cliente é obrigatório.")
             .MaximumLength(100).WithMessage("O nome deve ter no máximo 100 caracteres.");
 

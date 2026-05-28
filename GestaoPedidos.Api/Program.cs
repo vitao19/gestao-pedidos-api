@@ -5,7 +5,7 @@ using GestaoPedidos.Api.Application.Validators;
 using GestaoPedidos.Api.Domain.Interfaces;
 using GestaoPedidos.Api.Infrastructure.Data;
 using GestaoPedidos.Api.Infrastructure.Repositories;
-using GestaoPedidos.Api.Middleware;
+using GestaoPedidos.Api.Presentation.Middleware;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

@@ -40,6 +40,9 @@ public class Pedido
 
     public void MarcarComoPago()
     {
+        if (Status == StatusPedido.Cancelado)
+            throw new InvalidOperationException("Um pedido cancelado não pode ser pago.");
+
         Status = StatusPedido.Pago;
     }
 

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace GestaoPedidos.Api.Middleware;
+namespace GestaoPedidos.Api.Presentation.Middleware;
 
 public class TratadorExcecoesGlobal : IExceptionHandler
 {
