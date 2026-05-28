@@ -5,7 +5,7 @@ namespace GestaoPedidos.Api.Domain.Entities;
 public class Pedido
 {
     public Guid Id { get; private set; }
-    public string ClienteNome { get; private set; }
+    public string ClienteNome { get; private set; } = null!;
     public DateTime DataCriacao { get; private set; }
     public StatusPedido Status { get; private set; }
     public decimal ValorTotal { get; private set; }

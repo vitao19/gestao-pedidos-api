@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GestaoPedidos.Api.Tests/GestaoPedidos.Api.Tests.csproj" />
+  <Project Path="GestaoPedidos.Api/GestaoPedidos.Api.csproj" />
+</Solution>
