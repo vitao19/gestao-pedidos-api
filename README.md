@@ -8,6 +8,7 @@ API REST desenvolvida em .NET 8 para gerenciamento de pedidos.
 - Entity Framework Core
 - InMemory Database
 - FluentValidation
+- Testes unitários
 - ILogger
 - Swagger
 
